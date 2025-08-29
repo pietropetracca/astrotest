@@ -11,9 +11,15 @@ export default defineConfig({
 	},
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Guida',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
+				// Pagina principale di esempio
+				// { label: 'Pagina di Esempio', slug: 'esempio' },
+				{ label: 'Ereditarietà', slug: 'ereditarietà' },
+				{ label: 'IComparer', slug: 'icomparer' },
+				{ label: 'IEquatable', slug: 'iequitable' },
+
 				{
 					label: 'Guides',
 					items: [
