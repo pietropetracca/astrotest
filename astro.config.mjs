@@ -6,6 +6,9 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	site: 'https://pietro.petracca.github.io',
 	base: '/astrotest/',
+	image: {
+		service: { entrypoint: 'astro/assets/services/noop' }
+	},
 	integrations: [
 		starlight({
 			title: 'My Docs',

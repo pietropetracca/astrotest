@@ -33,9 +33,6 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
         
-      - name: Rebuild Sharp (for Linux compatibility)
-        run: yarn add sharp --force
-        
       - name: Build with Astro
         run: yarn build
         
