@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://pietro.petracca.github.io',
-	base: '/astro/',
+	base: '/astrotest/',
 	integrations: [
 		starlight({
 			title: 'My Docs',
