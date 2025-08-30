@@ -11,22 +11,44 @@ export default defineConfig({
 	},
 	integrations: [
 		starlight({
-			title: 'Guida',
+			title: 'Guida 3IB',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
-				// Pagina principale di esempio
-				// { label: 'Pagina di Esempio', slug: 'esempio' },
-				{ label: 'Ereditarietà', slug: 'ereditarietà' },
-				{ label: 'IComparer', slug: 'icomparer' },
-				{ label: 'IEquatable', slug: 'iequitable' },
-
+			sidebar: [	
 				{
-					label: 'Guides',
+					label: 'Programmazione Procedurale',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Guida', slug: 'guides/example' },
+					],
+				},	
+				{
+					label: 'OOP',
+					items: [
+						{ label: 'Ereditarietà',
+							items:[
+								{ label: 'Ereditarietà', slug: 'ereditarietà' }
+							]
+						},
+						{ label: 'Polimorfismo',
+							items:[
+								{ label: 'Polimorfismo', slug: 'esempio' }
+							]
+						},
+						{label: 'Interfacce', 
+							items: [
+								{ label: 'IComparer', slug: 'icomparer' },
+								{ label: 'IEquatable', slug: 'iequitable' },
+							],
+						},
+					],
+				},
+				{
+					label: 'MAUI',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
 					],
-				},
+				},	
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
