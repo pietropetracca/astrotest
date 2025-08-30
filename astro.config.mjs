@@ -18,7 +18,11 @@ export default defineConfig({
 					label: 'Programmazione Procedurale',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Guida', slug: 'guides/example' },
+						{ label: 'EsercizioMetodi', slug: 'metodi' },
+						{
+						label: 'Complessità Ordinamento',
+							autogenerate: { directory: 'compless' },
+						},
 					],
 				},	
 				{
